@@ -25,7 +25,7 @@ require 'function/function.php';
                                 <input type="date" class="form-control" name="ot" required placeholder="01.01.2019">
                             </div>
                             <div class="col">
-                                <input type="date" class="form-control" name="do"required placeholder="01.01.2019">
+                                <input type="date" class="form-control" name="do" required placeholder="01.01.2019">
                             </div>
                             <button type="submit" class="btn btn-primary" name="go">Посмотреть</button>
                         </div>
@@ -44,7 +44,7 @@ require 'function/function.php';
 <script src="views/assets/js/feather.js"></script>
 <script src="views/assets/js/chart.js"></script>
 <?php
-$dynamicCourseOfDate = dynamicCourses($_POST);
+$dynamicCourseOfDate = views($_POST, $file);
 ?>
 <script>
 
